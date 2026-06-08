@@ -4,7 +4,7 @@ Personal portfolio showcasing my work at the intersection of e-commerce,
 content management, and frontend development.
 
 ## 🔗 Live Site
-https://sharsstudio.github.io/myportfolio/
+https://sharsstudio.github.io/myportfolio/index.html.html
 
 ## About
 I'm a Technical E-Commerce Lead & CMS Specialist based in Munich, working 
