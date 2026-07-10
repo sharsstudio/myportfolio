@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sharlyn Granados — Marketing Designer & Data Science Student</title>
+  <title>Sharlyn Granados — Designer & Data Science Student</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -476,8 +476,6 @@ window.__initReveal = initReveal;
 
 <script type="text/babel">
 
-
-
 const { useState, useEffect, useRef } = React;
 const FONT_SERIF = 'var(--font-serif)';
 const FONT_SANS = 'var(--font-sans)';
@@ -487,6 +485,126 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "heroLayout": "centered",
   "planetDetail": "low"
 }/*EDITMODE-END*/;
+
+// ============================================================
+// TRANSLATIONS — EN / DE
+// ============================================================
+const TRANSLATIONS = {
+  en: {
+    nav: ['About', 'Services', 'Projects', 'Resume', 'Contact'],
+    hero: {
+      subtitle: 'FRONTEND DEVELOPER  · E-COMMERCE SPECIALIST',
+      taglineA: 'Bridging human intuition and machine intelligence —',
+      taglineB: 'crafting digital experiences.',
+      cta1: 'Work with me',
+      cta2: 'View work',
+      scroll: 'Scroll',
+    },
+    about: {
+      label: 'About',
+      headlineA: 'Designing the future,',
+      headlineB: 'one interface',
+      headlineC: ' at a time.',
+      p1: "I'm Sharlyn — a Frontend Developer with a strong background in E-Commerce and digital marketing. I bridge the gap between clean, responsive code and seamless user experiences. I love turning complex business logic into beautiful, functional web applications. Currently studying my bachelor on Data Science & AI Engineering.",
+      p2: 'From AI-powered interfaces to full product redesigns, I operate at the intersection of technology and design — bringing clarity where there is complexity.',
+      years: 'years',
+      languages: [['🇺🇸', 'English', 'Fluent'], ['🇩🇪', 'German', 'C1'], ['🇪🇸', 'Spanish', 'Native']],
+    },
+    services: {
+      label: 'Services',
+      headlineA: 'What I bring',
+      headlineB: 'to the table',
+      items: [
+        { sym: '◎', title: 'UX/UI Consulting', desc: 'Strategic design guidance aligned with user needs. Audits, workshops, full design systems.', tags: ['Research', 'Strategy', 'Systems'] },
+        { sym: '◈', title: 'AI Engineering', desc: 'Intelligent interfaces and AI-powered workflows. LLM integration, prompt design, product thinking.', tags: ['LLMs', 'Automation', 'APIs'] },
+        { sym: '⟳', title: 'Product Redesign', desc: 'Modernize aging products without losing what users love. Data-informed, visually sharp.', tags: ['Redesign', 'Audit', 'Visual'] },
+        { sym: '◻', title: 'App Design', desc: 'End-to-end mobile and web design. Hi-fi prototypes, interactions, and developer handoff.', tags: ['Mobile', 'Web', 'Prototype'] },
+      ],
+    },
+    projects: {
+      label: 'Selected Work',
+      headlineA: 'Projects',
+      headlineB: '& case studies',
+      placeholder: '— Replace with real case studies —',
+      items: [
+        { n: '01', title: 'B2B Platform Redesign', type: 'UX/UI · AI', desc: 'AI-powered insights and a new design system from scratch.', year: '2025/26', url: 'https://www.newwave-germany.de' },
+        { n: '02', title: 'Migraine Insights App', type: 'App Design', desc: 'End-to-end 0→1 fintech design with a focus on accessibility and trust.', year: '2025', url: 'https://ai.studio/apps/017fb795-fe01-44cb-be38-f60103934677' },
+        { n: '03', title: 'Pharmaceutical Portal Redesign', type: 'Healthcare UX', desc: 'Modernized pharmaceutical internet portal with optimized UX and intuitive navigation for pharmacists. Enhanced product discovery and streamlined workflows.', year: '2026' },
+      ],
+    },
+    contact: {
+      label: 'Contact',
+      headlineA: "Let's build",
+      headlineB: 'something great.',
+      subtext: 'Open to consulting engagements, full-time roles, and speaking opportunities.',
+      linkedin: 'Connect on LinkedIn',
+      nameLbl: 'Name',      namePh: 'Your name',
+      emailLbl: 'Email',    emailPh: 'your@email.com',
+      msgLbl: 'Message',    msgPh: 'Tell me about your project...',
+      send: 'Send message',
+      thanks: 'Thank you ✦',
+      thanksMsg: "I'll be in touch soon.",
+    },
+    footer: { tagline: 'Made with intention ✦' },
+  },
+  de: {
+    nav: ['Über mich', 'Leistungen', 'Projekte', 'Lebenslauf', 'Kontakt'],
+    hero: {
+      subtitle: 'FRONTEND ENTWICKLERIN  · E-COMMERCE SPEZIALISTIN',
+      taglineA: 'Menschliche Intuition und maschinelle Intelligenz —',
+      taglineB: 'digitale Erlebnisse gestalten.',
+      cta1: 'Zusammenarbeiten',
+      cta2: 'Projekte ansehen',
+      scroll: 'Scrollen',
+    },
+    about: {
+      label: 'Über mich',
+      headlineA: 'Die Zukunft gestalten,',
+      headlineB: 'ein Interface',
+      headlineC: ' nach dem anderen.',
+      p1: 'Ich bin Sharlyn — eine Frontend-Entwicklerin mit starkem Hintergrund in E-Commerce und digitalem Marketing. Ich verbinde sauberen, responsiven Code mit nahtlosen Nutzererlebnissen. Ich liebe es, komplexe Geschäftslogik in schöne, funktionale Web-Applikationen zu verwandeln. Derzeit studiere ich Data Science & KI-Engineering.',
+      p2: 'Von KI-gestützten Interfaces bis hin zu vollständigen Produkt-Redesigns arbeite ich an der Schnittstelle von Technologie und Design — und bringe Klarheit, wo Komplexität herrscht.',
+      years: 'Jahre',
+      languages: [['🇺🇸', 'Englisch', 'Fließend'], ['🇩🇪', 'Deutsch', 'C1'], ['🇪🇸', 'Spanisch', 'Muttersprache']],
+    },
+    services: {
+      label: 'Leistungen',
+      headlineA: 'Was ich einbringe',
+      headlineB: 'auf den Tisch',
+      items: [
+        { sym: '◎', title: 'UX/UI-Beratung', desc: 'Strategische Design-Begleitung ausgerichtet auf Nutzerbedürfnisse. Audits, Workshops, vollständige Design-Systeme.', tags: ['Research', 'Strategie', 'Systeme'] },
+        { sym: '◈', title: 'KI-Engineering', desc: 'Intelligente Interfaces und KI-gestützte Workflows. LLM-Integration, Prompt-Design, Produktdenken.', tags: ['LLMs', 'Automatisierung', 'APIs'] },
+        { sym: '⟳', title: 'Produkt-Redesign', desc: 'Veraltete Produkte modernisieren, ohne was Nutzer lieben zu verlieren. Datengetrieben, visuell scharf.', tags: ['Redesign', 'Audit', 'Visuell'] },
+        { sym: '◻', title: 'App-Design', desc: 'End-to-end Mobile- und Web-Design. Hi-Fi-Prototypen, Interaktionen und Developer-Handoff.', tags: ['Mobile', 'Web', 'Prototyp'] },
+      ],
+    },
+    projects: {
+      label: 'Ausgewählte Arbeiten',
+      headlineA: 'Projekte',
+      headlineB: '& Fallstudien',
+      placeholder: '— Durch echte Fallstudien ersetzen —',
+      items: [
+        { n: '01', title: 'B2B-Plattform Redesign', type: 'UX/UI · KI', desc: 'KI-gestützte Einblicke und ein neues Design-System von Grund auf.', year: '2025/26', url: 'https://www.newwave-germany.de' },
+        { n: '02', title: 'Migräne-Insights-App', type: 'App Design', desc: 'End-to-End 0→1 Fintech-Design mit Fokus auf Barrierefreiheit und Vertrauen.', year: '2025', url: 'https://ai.studio/apps/017fb795-fe01-44cb-be38-f60103934677' },
+        { n: '03', title: 'Pharmazeutisches Portal Redesign', type: 'Healthcare UX', desc: 'Modernisiertes pharmazeutisches Internetportal mit optimierter UX und intuitiver Navigation für Apotheker. Verbesserte Produktauffindbarkeit und optimierte Workflows.', year: '2026' },
+      ],
+    },
+    contact: {
+      label: 'Kontakt',
+      headlineA: 'Lass uns etwas',
+      headlineB: 'Großartiges bauen.',
+      subtext: 'Offen für Beratungsmandate, Vollzeitstellen und Sprecherauftritte.',
+      linkedin: 'Auf LinkedIn verbinden',
+      nameLbl: 'Name',       namePh: 'Ihr Name',
+      emailLbl: 'E-Mail',    emailPh: 'ihre@email.de',
+      msgLbl: 'Nachricht',   msgPh: 'Erzählen Sie mir von Ihrem Projekt...',
+      send: 'Nachricht senden',
+      thanks: 'Vielen Dank ✦',
+      thanksMsg: 'Ich melde mich bald bei Ihnen.',
+    },
+    footer: { tagline: 'Mit Intention gemacht ✦' },
+  },
+};
 
 const THEMES = {
   amber: {
@@ -590,14 +708,33 @@ function useTweaks() {
   return [tweaks, setTweaks];
 }
 
+function useLang() {
+  const [lang, setLang] = useState(() => {
+    try { return localStorage.getItem('sg_lang') || 'en'; } catch { return 'en'; }
+  });
+  useEffect(() => {
+    try { localStorage.setItem('sg_lang', lang); } catch {}
+    document.documentElement.lang = lang;
+  }, [lang]);
+  return [lang, setLang];
+}
+
 // ---- Nav ----
-function Nav({ t }) {
+function Nav({ t, lang, setLang, tr }) {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const h = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', h);
     return () => window.removeEventListener('scroll', h);
   }, []);
+
+  const navLinks = [
+    [tr.nav[0], '#about'],
+    [tr.nav[1], '#services'],
+    [tr.nav[2], '#projects'],
+    [tr.nav[3], '#resume'],
+    [tr.nav[4], '#contact'],
+  ];
 
   return (
     <nav style={{
@@ -609,8 +746,8 @@ function Nav({ t }) {
       transition: 'all 0.4s ease'
     }}>
       <div style={{ fontFamily: FONT_SERIF, fontSize: 18, fontWeight: 500, color: t.accent, letterSpacing: '0.1em' }}>SG</div>
-      <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
-        {[['About', '#about'], ['Services', '#services'], ['Projects', '#projects'], ['Resume', '#resume'], ['Contact', '#contact']].map(([l, h]) =>
+      <div style={{ display: 'flex', gap: 28, alignItems: 'center' }}>
+        {navLinks.map(([l, h]) =>
         <a key={l} href={h} style={{
           color: '#7a7672', fontSize: 12, letterSpacing: '0.1em', textDecoration: 'none',
           textTransform: 'uppercase', fontWeight: 500, transition: 'color 0.2s'
@@ -619,13 +756,36 @@ function Nav({ t }) {
         onMouseLeave={(e) => e.target.style.color = '#7a7672'}>
           {l}</a>
         )}
+        {/* Language toggle pill */}
+        <div style={{
+          display: 'flex', gap: 2, padding: 3, borderRadius: 20,
+          background: 'rgba(15,14,12,0.6)', border: `1px solid rgba(${t.accentRgb},0.22)`,
+          backdropFilter: 'blur(12px)'
+        }}>
+          {['en', 'de'].map((l) => (
+            <button
+              key={l}
+              onClick={() => setLang(l)}
+              style={{
+                padding: '5px 13px', borderRadius: 16, border: 'none',
+                fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', fontWeight: 700,
+                cursor: 'pointer', transition: 'all 0.22s',
+                background: lang === l ? `linear-gradient(120deg, ${t.accent}, ${t.accent2})` : 'transparent',
+                color: lang === l ? '#0e0d0b' : '#6a6562',
+                fontFamily: FONT_SANS
+              }}
+            >
+              {l === 'en' ? 'EN' : 'DE'}
+            </button>
+          ))}
+        </div>
       </div>
     </nav>);
 
 }
 
 // ---- Hero ----
-function Hero({ t, layout }) {
+function Hero({ t, layout, tr }) {
   const isSplit = layout === 'split';
   return (
     <section style={{
@@ -673,15 +833,15 @@ function Hero({ t, layout }) {
           fontSize: 13, letterSpacing: '0.14em', textTransform: 'uppercase',
           marginBottom: 28, fontWeight: 500,
           marginTop: 16, color: "rgb(188, 186, 185)"
-        }}>FRONTEND DEVELOPER  · E-COMMERCE SPECIALIST</p>
+        }}>{tr.hero.subtitle}</p>
 
         <p style={{
           fontSize: 16, lineHeight: 1.75, color: '#c2bdb4',
           marginBottom: 52, maxWidth: isSplit ? 480 : 520,
           margin: isSplit ? '0 0 52px 0' : '0 auto 52px'
         }}>
-          Bridging human intuition and machine intelligence —<br />
-          crafting digital experiences.
+          {tr.hero.taglineA}<br />
+          {tr.hero.taglineB}
         </p>
 
         <div style={{ display: 'flex', gap: 12, justifyContent: isSplit ? 'flex-start' : 'center', flexWrap: 'wrap' }}>
@@ -693,7 +853,7 @@ function Hero({ t, layout }) {
           }}
           onMouseEnter={(e) => {e.target.style.filter = 'brightness(1.12)';e.target.style.transform = 'translateY(-2px)';}}
           onMouseLeave={(e) => {e.target.style.filter = 'none';e.target.style.transform = 'none';}}>
-            Work with me</a>
+            {tr.hero.cta1}</a>
           <a href="#projects" style={{
             padding: '15px 34px', borderRadius: 5,
             border: `1px solid ${t.accentBorder}`, color: t.accent,
@@ -703,7 +863,7 @@ function Hero({ t, layout }) {
           }}
           onMouseEnter={(e) => {e.target.style.background = t.accentDim;}}
           onMouseLeave={(e) => {e.target.style.background = 'transparent';}}>
-            View work</a>
+            {tr.hero.cta2}</a>
         </div>
       </div>
 
@@ -712,7 +872,7 @@ function Hero({ t, layout }) {
         position: 'absolute', bottom: 32, left: '50%', transform: 'translateX(-50%)',
         display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, opacity: 0.35
       }}>
-        <span style={{ fontSize: 10, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#8a857e' }}>Scroll</span>
+        <span style={{ fontSize: 10, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#8a857e' }}>{tr.hero.scroll}</span>
         <div style={{ width: 1, height: 52, background: `linear-gradient(to bottom, ${t.accent}, transparent)` }} />
       </div>
     </section>);
@@ -720,36 +880,36 @@ function Hero({ t, layout }) {
 }
 
 // ---- About ----
-function About({ t }) {
+function About({ t, tr }) {
   return (
     <section id="about" style={{ padding: '130px 6vw', maxWidth: 1200, margin: '0 auto' }}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 96, alignItems: 'center' }}>
         <div className="reveal reveal-l">
           <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
             <div style={{ width: 44, height: 1, background: `linear-gradient(90deg, ${t.accent}, ${t.accent2})` }} />
-            <p style={{ fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: t.accent, fontWeight: 600 }}>About</p>
+            <p style={{ fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: t.accent, fontWeight: 600 }}>{tr.about.label}</p>
           </div>
           <h2 style={{
             fontFamily: FONT_SERIF, fontWeight: 300,
             fontSize: 'clamp(36px,4vw,56px)', lineHeight: 1.08,
             color: '#e2dcd4', marginBottom: 28
           }}>
-            Designing the future,<br /><em style={{ background: `linear-gradient(100deg, ${t.accent}, ${t.accent2})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>one interface</em> at a time.
+            {tr.about.headlineA}<br /><em style={{ background: `linear-gradient(100deg, ${t.accent}, ${t.accent2})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{tr.about.headlineB}</em>{tr.about.headlineC}
           </h2>
           <p style={{ fontSize: 15, lineHeight: 1.85, marginBottom: 18, color: "rgb(202, 201, 199)" }}>
-            I'm Sharlyn — a Frontend Developer with a strong background in E-Commerce and digital marketing. I bridge the gap between clean, responsive code and seamless user experiences. I love turning complex business logic into beautiful, functional web applications. Currently studying my bachelor on Data Science & AI Engineering.
+            {tr.about.p1}
           </p>
           <p style={{ fontSize: 15, lineHeight: 1.85, marginBottom: 40, color: "rgb(188, 186, 185)" }}>
-            From AI-powered interfaces to full product redesigns, I operate at the intersection of technology and design — bringing clarity where there is complexity.
+            {tr.about.p2}
           </p>
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-            {[['🇺🇸', 'English', 'Fließend'], ['🇩🇪', 'Deutsch', 'Fließend'], ['🇪🇸', 'Spanish', 'Native']].map(([flag, lang, lvl]) =>
-            <div key={lang} style={{
+            {tr.about.languages.map(([flag, langName, lvl]) =>
+            <div key={langName} style={{
               padding: '11px 16px', borderRadius: 7,
               border: `1px solid ${t.accentBorder}`,
               background: t.accentDim
             }}>
-                <div style={{ fontSize: 13, color: '#c8c2b8', fontWeight: 500, marginBottom: 2 }}>{flag} {lang}</div>
+                <div style={{ fontSize: 13, color: '#c8c2b8', fontWeight: 500, marginBottom: 2 }}>{flag} {langName}</div>
                 <div style={{ fontSize: 11, color: t.accent, letterSpacing: '0.05em' }}>{lvl}</div>
               </div>
             )}
@@ -783,7 +943,7 @@ function About({ t }) {
             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'
           }}>
             <div style={{ fontFamily: FONT_SERIF, fontSize: 30, fontWeight: 300, color: t.accent, lineHeight: 1 }}>2+</div>
-            <div style={{ fontSize: 9, letterSpacing: '0.1em', color: '#5a5854', textTransform: 'uppercase', marginTop: 2 }}>years</div>
+            <div style={{ fontSize: 9, letterSpacing: '0.1em', color: '#5a5854', textTransform: 'uppercase', marginTop: 2 }}>{tr.about.years}</div>
           </div>
         </div>
       </div>
@@ -792,13 +952,8 @@ function About({ t }) {
 }
 
 // ---- Services ----
-function Services({ t }) {
+function Services({ t, tr }) {
   const [hov, setHov] = useState(null);
-  const services = [
-  { sym: '◎', title: 'UX/UI Consulting', desc: 'Strategic design guidance aligned with user needs. Audits, workshops, full design systems.', tags: ['Research', 'Strategy', 'Systems'] },
-  { sym: '◈', title: 'AI Engineering', desc: 'Intelligent interfaces and AI-powered workflows. LLM integration, prompt design, product thinking.', tags: ['LLMs', 'Automation', 'APIs'] },
-  { sym: '⟳', title: 'Product Redesign', desc: 'Modernize aging products without losing what users love. Data-informed, visually sharp.', tags: ['Redesign', 'Audit', 'Visual'] },
-  { sym: '◻', title: 'App Design', desc: 'End-to-end mobile and web design. Hi-fi prototypes, interactions, and developer handoff.', tags: ['Mobile', 'Web', 'Prototype'] }];
 
   const radii = ['12px 0 0 0', '0 12px 0 0', '0 0 0 12px', '0 0 12px 0'];
   return (
@@ -806,16 +961,16 @@ function Services({ t }) {
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         <div className="reveal" style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 56 }}>
           <div style={{ width: 44, height: 1, background: `linear-gradient(90deg, ${t.accent}, ${t.accent2})` }} />
-          <p style={{ fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: t.accent, fontWeight: 600 }}>Services</p>
+          <p style={{ fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: t.accent, fontWeight: 600 }}>{tr.services.label}</p>
         </div>
         <h2 className="reveal" style={{
           fontFamily: FONT_SERIF, fontWeight: 300,
           fontSize: 'clamp(34px,4vw,52px)', lineHeight: 1.08,
           color: '#e2dcd4', marginBottom: 56, maxWidth: 440
-        }}>What I bring<br /><em style={{ background: `linear-gradient(100deg, ${t.accent}, ${t.accent2})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>to the table</em></h2>
+        }}>{tr.services.headlineA}<br /><em style={{ background: `linear-gradient(100deg, ${t.accent}, ${t.accent2})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{tr.services.headlineB}</em></h2>
 
         <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
-          {services.map((s, i) =>
+          {tr.services.items.map((s, i) =>
           <div key={i}
           onMouseEnter={() => setHov(i)}
           onMouseLeave={() => setHov(null)}
@@ -847,28 +1002,24 @@ function Services({ t }) {
 }
 
 // ---- Projects ----
-function Projects({ t }) {
+function Projects({ t, tr }) {
   const [hov, setHov] = useState(null);
-  const projects = [
-  { n: '01', title: 'B2B Platform Redesign', type: 'UX/UI · AI', desc: 'AI-powered insights and a new design system from scratch.', year: '2025/26', url: 'https://www.newwave-germany.de' },
-  { n: '02', title: 'Migraine Insights App', type: 'App Design', desc: 'End-to-end 0→1 fintech design with a focus on accessibility and trust.', year: '2025', url: 'https://ai.studio/apps/017fb795-fe01-44cb-be38-f60103934677' },
-  { n: '03', title: 'Pharmaceutical Portal Redesign', type: 'Healthcare UX', desc: 'Modernized pharmaceutical internet portal with optimized UX and intuitive navigation for pharmacists. Enhanced product discovery and streamlined workflows.', year: '2026' }];
 
   return (
     <section id="projects" style={{ padding: '130px 6vw', position: 'relative' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <div className="reveal" style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 56 }}>
           <div style={{ width: 44, height: 1, background: `linear-gradient(90deg, ${t.accent}, ${t.accent2})` }} />
-          <p style={{ fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: t.accent, fontWeight: 600 }}>Selected Work</p>
+          <p style={{ fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: t.accent, fontWeight: 600 }}>{tr.projects.label}</p>
         </div>
         <h2 className="reveal" style={{
           fontFamily: FONT_SERIF, fontWeight: 300,
           fontSize: 'clamp(34px,4vw,52px)', lineHeight: 1.08,
           color: '#e2dcd4', marginBottom: 56
-        }}>Projects<br /><em style={{ background: `linear-gradient(100deg, ${t.accent}, ${t.accent2})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>& case studies</em></h2>
+        }}>{tr.projects.headlineA}<br /><em style={{ background: `linear-gradient(100deg, ${t.accent}, ${t.accent2})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{tr.projects.headlineB}</em></h2>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-          {projects.map((p, i) => {
+          {tr.projects.items.map((p, i) => {
           const Row = p.url ? 'a' : 'div';
           const linkProps = p.url ? { href: p.url, target: '_blank', rel: 'noopener noreferrer' } : {};
           return (
@@ -904,7 +1055,7 @@ function Projects({ t }) {
             </Row>
           ); })}
         </div>
-        <p style={{ marginTop: 24, fontSize: 11, color: '#38363280', letterSpacing: '0.06em', fontStyle: 'italic', textAlign: 'center' }}>— Replace with real case studies —</p>
+        <p style={{ marginTop: 24, fontSize: 11, color: '#38363280', letterSpacing: '0.06em', fontStyle: 'italic', textAlign: 'center' }}>{tr.projects.placeholder}</p>
       </div>
     </section>);
 
@@ -1042,42 +1193,18 @@ const CV_DATA = {
   }
 };
 
-function Resume({ t }) {
-  const [lang, setLang] = useState('de');
-  const data = CV_DATA[lang];
+function Resume({ t, lang }) {
+  const data = CV_DATA[lang] || CV_DATA['en'];
 
   return (
     <section id="resume" style={{ padding: '130px 6vw', position: 'relative' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', zIndex: 1 }}>
         
         {/* Section Header */}
-        <div className="reveal" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 56, flexWrap: 'wrap', gap: 20 }}>
+        <div className="reveal" style={{ display: 'flex', alignItems: 'center', marginBottom: 56, flexWrap: 'wrap', gap: 20 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
             <div style={{ width: 44, height: 1, background: `linear-gradient(90deg, ${t.accent}, ${t.accent2})` }} />
             <p style={{ fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: t.accent, fontWeight: 600 }}>{data.title}</p>
-          </div>
-          
-          {/* Language Toggle Tab */}
-          <div style={{
-            display: 'flex', gap: 4, padding: 4, borderRadius: 30,
-            background: 'rgba(25,23,20,0.6)', border: `1px solid ${t.accentBorder}`,
-            backdropFilter: 'blur(10px)'
-          }}>
-            {['de', 'en'].map((l) => (
-              <button
-                key={l}
-                onClick={() => setLang(l)}
-                style={{
-                  padding: '8px 18px', borderRadius: 20, border: 'none',
-                  fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600,
-                  cursor: 'pointer', transition: 'all 0.25s',
-                  background: lang === l ? `linear-gradient(120deg, ${t.accent}, ${t.accent2})` : 'transparent',
-                  color: lang === l ? '#0e0d0b' : '#8a857e'
-                }}
-              >
-                {l === 'de' ? 'Deutsch' : 'English'}
-              </button>
-            ))}
           </div>
         </div>
 
@@ -1239,7 +1366,7 @@ function Resume({ t }) {
 }
 
 // ---- Contact ----
-function Contact({ t }) {
+function Contact({ t, tr }) {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [sent, setSent] = useState(false);
   const inputStyle = {
@@ -1255,17 +1382,17 @@ function Contact({ t }) {
       <div style={{ maxWidth: 720, margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <div className="reveal" style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 52 }}>
           <div style={{ width: 44, height: 1, background: `linear-gradient(90deg, ${t.accent}, ${t.accent2})` }} />
-          <p style={{ fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: t.accent, fontWeight: 600 }}>Contact</p>
+          <p style={{ fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: t.accent, fontWeight: 600 }}>{tr.contact.label}</p>
         </div>
         <h2 className="reveal" style={{
           fontFamily: FONT_SERIF, fontWeight: 300,
           fontSize: 'clamp(38px,5.5vw,72px)', lineHeight: 1.02,
           color: '#e2dcd4', marginBottom: 14
         }}>
-          Let's build<br /><em style={{ background: `linear-gradient(100deg, ${t.accent}, ${t.accent2})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>something great.</em>
+          {tr.contact.headlineA}<br /><em style={{ background: `linear-gradient(100deg, ${t.accent}, ${t.accent2})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{tr.contact.headlineB}</em>
         </h2>
         <p className="reveal" style={{ fontSize: 15, lineHeight: 1.8, color: '#b3aea5', marginBottom: 48 }}>
-          Open to consulting engagements, full-time roles, and speaking opportunities.
+          {tr.contact.subtext}
         </p>
 
         <a href="https://linkedin.com/in/sharlyn-granados/" target="_blank" rel="noopener noreferrer" style={{
@@ -1280,13 +1407,13 @@ function Contact({ t }) {
         onMouseLeave={(e) => {e.currentTarget.style.transform = 'none';e.currentTarget.style.background = t.accentDim;}}>
           
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
-          Connect on LinkedIn
+          {tr.contact.linkedin}
         </a>
 
         {sent ?
         <div style={{ padding: '44px', borderRadius: 10, textAlign: 'center', border: `1px solid ${t.accentBorder}`, background: t.accentDim }}>
-            <div style={{ fontFamily: FONT_SERIF, fontSize: 32, color: t.accent, marginBottom: 10 }}>Thank you ✦</div>
-            <p style={{ color: '#b3aea5', fontSize: 14 }}>I'll be in touch soon.</p>
+            <div style={{ fontFamily: FONT_SERIF, fontSize: 32, color: t.accent, marginBottom: 10 }}>{tr.contact.thanks}</div>
+            <p style={{ color: '#b3aea5', fontSize: 14 }}>{tr.contact.thanksMsg}</p>
           </div> :
 
         <form onSubmit={(e) => {
@@ -1296,7 +1423,7 @@ function Contact({ t }) {
           window.location.href = `mailto:shargranados@icloud.com?subject=${subject}&body=${body}`;
           setSent(true);
         }} style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-            {[['name', 'Name', 'Your name'], ['email', 'Email', 'your@email.com']].map(([k, l, ph]) =>
+            {[['name', tr.contact.nameLbl, tr.contact.namePh], ['email', tr.contact.emailLbl, tr.contact.emailPh]].map(([k, l, ph]) =>
           <div key={k}>
                 <label style={{ display: 'block', fontSize: 10, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#504e4b', marginBottom: 5 }}>{l}</label>
                 <input type={k === 'email' ? 'email' : 'text'} placeholder={ph} required
@@ -1308,8 +1435,8 @@ function Contact({ t }) {
               </div>
           )}
             <div>
-              <label style={{ display: 'block', fontSize: 10, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#504e4b', marginBottom: 5 }}>Message</label>
-              <textarea placeholder="Tell me about your project..." required rows={5}
+              <label style={{ display: 'block', fontSize: 10, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#504e4b', marginBottom: 5 }}>{tr.contact.msgLbl}</label>
+              <textarea placeholder={tr.contact.msgPh} required rows={5}
             value={form.message} onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
             style={{ ...inputStyle, resize: 'vertical' }}
             onFocus={(e) => e.target.style.borderColor = t.accent}
@@ -1325,7 +1452,7 @@ function Contact({ t }) {
           }}
           onMouseEnter={(e) => {e.target.style.background = t.accentHover;e.target.style.transform = 'translateY(-2px)';}}
           onMouseLeave={(e) => {e.target.style.background = t.accent;e.target.style.transform = 'none';}}>
-            Send message</button>
+            {tr.contact.send}</button>
           </form>
         }
       </div>
@@ -1334,7 +1461,7 @@ function Contact({ t }) {
 }
 
 // ---- Footer ----
-function Footer({ t }) {
+function Footer({ t, tr }) {
   return (
     <footer style={{
       padding: '28px 6vw', borderTop: '1px solid rgba(32,30,28,1)',
@@ -1342,7 +1469,7 @@ function Footer({ t }) {
     }}>
       <span style={{ fontFamily: FONT_SERIF, fontSize: 16, color: t.accent, letterSpacing: '0.1em' }}>SG</span>
       <span style={{ fontSize: 11, color: '#3e3c39', letterSpacing: '0.06em' }}>© 2025 Sharlyn Granados</span>
-      <span style={{ fontSize: 11, color: '#353330', letterSpacing: '0.04em', fontStyle: 'italic' }}>Made with intention ✦</span>
+      <span style={{ fontSize: 11, color: '#353330', letterSpacing: '0.04em', fontStyle: 'italic' }}>{tr.footer.tagline}</span>
     </footer>);
 
 }
@@ -1350,7 +1477,9 @@ function Footer({ t }) {
 // ---- App ----
 function App() {
   const [tweaks, setTweaks] = useTweaks();
+  const [lang, setLang] = useLang();
   const t = THEMES[tweaks.theme] || THEMES.ember || THEMES.amber;
+  const tr = TRANSLATIONS[lang] || TRANSLATIONS.en;
 
   useEffect(() => {
     const handler = (e) => {
@@ -1397,14 +1526,14 @@ function App() {
 
   return (
     <>
-      <Nav t={t} />
-      <Hero t={t} layout={tweaks.heroLayout} />
-      <About t={t} />
-      <Services t={t} />
-      <Projects t={t} />
-      <Resume t={t} />
-      <Contact t={t} />
-      <Footer t={t} />
+      <Nav t={t} lang={lang} setLang={setLang} tr={tr} />
+      <Hero t={t} layout={tweaks.heroLayout} tr={tr} />
+      <About t={t} tr={tr} />
+      <Services t={t} tr={tr} />
+      <Projects t={t} tr={tr} />
+      <Resume t={t} lang={lang} />
+      <Contact t={t} tr={tr} />
+      <Footer t={t} tr={tr} />
     </>);
 
 }
